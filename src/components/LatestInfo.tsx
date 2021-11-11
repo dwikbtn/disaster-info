@@ -1,6 +1,14 @@
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { fetchQuake } from "../api/api";
 
 const LatestInfo = (): JSX.Element => {
+  const [infoState, setInfoState] = useState(null);
+  useEffect(() => {
+    fetchQuake().then((data) => {
+      setInfoState(data);
+    });
+  }, []);
   return (
     <Card sx={{ maxWidth: 446 }}>
       <CardMedia
