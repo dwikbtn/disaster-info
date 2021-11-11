@@ -5,7 +5,7 @@ function App(): JSX.Element {
   return (
     <Container maxWidth="sm">
       <Typography
-        variant="h2"
+        variant="h3"
         component="h1"
         color="initial"
         textAlign="center"
