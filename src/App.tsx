@@ -1,4 +1,5 @@
 import { Container, Typography } from "@mui/material";
+import EmergencyNumber from "./components/EmergencyNumber";
 import LatestInfo from "./components/LatestInfo";
 
 function App(): JSX.Element {
@@ -15,6 +16,7 @@ function App(): JSX.Element {
         Latest Earthquake
       </Typography>
       <LatestInfo />
+      <EmergencyNumber />
     </Container>
   );
 }

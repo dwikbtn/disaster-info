@@ -14,7 +14,7 @@ const LatestInfo = (): JSX.Element => {
     <Box
       sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
     >
-      <Card sx={{ maxWidth: 446 }}>
+      <Card sx={{ maxWidth: 446, marginBottom: "30px" }}>
         <CardMedia
           component="img"
           height="165"
@@ -33,14 +33,14 @@ const LatestInfo = (): JSX.Element => {
             <strong>location:</strong> {infoState?.data.wilayah}
           </Typography>
           <Typography variant="body2" color="text.secondary">
+            <strong>magnitude: {infoState?.data.magnitude} </strong>
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
             <strong>date and time :</strong> {infoState?.data.tanggal}{" "}
             {infoState?.data.jam}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             <strong>coordinates:</strong> {infoState?.data.coordinates}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            <strong>magnitude: {infoState?.data.magnitude} </strong>
           </Typography>
           <Typography variant="body2" color="text.secondary">
             <strong>Depth:</strong> {infoState?.data.kedalaman}
